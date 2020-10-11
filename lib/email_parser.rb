@@ -16,7 +16,7 @@ def self.all
   @@all
 end
 
-def self.parse
+def parse
   @@all.uniq
 end
 
