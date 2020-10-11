@@ -17,7 +17,8 @@ def self.all
 end
 
 def parse
-  @@all.uniq
+  self.email_addresses.split(" ").collect { |x| 
+  x}.join(" ")
 end
 
 end
