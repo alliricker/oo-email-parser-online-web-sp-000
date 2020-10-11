@@ -14,7 +14,8 @@ end
 
 def parse
   split_email = email_addresses.split(/[,\s]+/).collect { |x|
-  x }
+  x }.uniq
+
 end
 
 end
