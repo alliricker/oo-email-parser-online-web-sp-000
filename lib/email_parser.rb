@@ -12,6 +12,10 @@ def initialize(email_addresses)
   @@all << self
 end
 
+def self.all 
+  @@all
+end
+
 def self.parse
   @@all.uniq
 end
