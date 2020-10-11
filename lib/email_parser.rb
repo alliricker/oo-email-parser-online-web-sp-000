@@ -13,7 +13,7 @@ end
 
 
 def parse
-  split_email = email_addresses.split.collect { |x|
+  split_email = email_addresses.split(/[,\s]+/).collect { |x|
   x }
   return_arr = split_email.flatten.uniq
   return_arr
