@@ -9,7 +9,7 @@ attr_accessor :email_addresses
 
 def initialize
   @email_addresses = email_addresses
-  @@all < self
+  @@all << self
 end
 
 def self.parse
